@@ -1,0 +1,16 @@
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\bin\Debug\net8.0\Minefield.Model.deps.json
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\bin\Debug\net8.0\Minefield.Model.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\bin\Debug\net8.0\Minefield.Model.pdb
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\bin\Debug\net8.0\Minefield.Persistence.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\bin\Debug\net8.0\Minefield.Persistence.pdb
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.csproj.AssemblyReference.cache
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.AssemblyInfoInputs.cache
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.AssemblyInfo.cs
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.csproj.CoreCompileInputs.cache
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.sourcelink.json
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefiel.6D2DE6D8.Up2Date
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\refint\Minefield.Model.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\Minefield.Model.pdb
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Model\obj\Debug\net8.0\ref\Minefield.Model.dll

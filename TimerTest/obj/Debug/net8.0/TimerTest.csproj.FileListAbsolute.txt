@@ -1,0 +1,15 @@
+D:\repos\MinefieldGame\TimerTest\bin\Debug\net8.0\TimerTest.exe
+D:\repos\MinefieldGame\TimerTest\bin\Debug\net8.0\TimerTest.deps.json
+D:\repos\MinefieldGame\TimerTest\bin\Debug\net8.0\TimerTest.runtimeconfig.json
+D:\repos\MinefieldGame\TimerTest\bin\Debug\net8.0\TimerTest.dll
+D:\repos\MinefieldGame\TimerTest\bin\Debug\net8.0\TimerTest.pdb
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.AssemblyInfoInputs.cache
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.AssemblyInfo.cs
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.csproj.CoreCompileInputs.cache
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.sourcelink.json
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.dll
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\refint\TimerTest.dll
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.pdb
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\TimerTest.genruntimeconfig.cache
+D:\repos\MinefieldGame\TimerTest\obj\Debug\net8.0\ref\TimerTest.dll

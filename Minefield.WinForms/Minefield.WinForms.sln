@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minefield.Model", "Minefield.Model\Minefield.Model.csproj", "{895A670A-9B1E-41A7-BD76-B31B232F8905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minefield.Persistence", "Minefield.Persistence\Minefield.Persistence.csproj", "{81597606-FA9F-431C-9999-A5B4D30C2FAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minefield.Test", "Minefield.Test\Minefield.Test.csproj", "{D0D8DB9A-CE5D-4E77-89BC-653532BC7223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minefield.View", "Minefield.View\Minefield.View.csproj", "{95344958-848C-4941-BC04-F2CAF1303101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895A670A-9B1E-41A7-BD76-B31B232F8905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895A670A-9B1E-41A7-BD76-B31B232F8905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895A670A-9B1E-41A7-BD76-B31B232F8905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895A670A-9B1E-41A7-BD76-B31B232F8905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81597606-FA9F-431C-9999-A5B4D30C2FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81597606-FA9F-431C-9999-A5B4D30C2FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81597606-FA9F-431C-9999-A5B4D30C2FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81597606-FA9F-431C-9999-A5B4D30C2FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D8DB9A-CE5D-4E77-89BC-653532BC7223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D8DB9A-CE5D-4E77-89BC-653532BC7223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D8DB9A-CE5D-4E77-89BC-653532BC7223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D8DB9A-CE5D-4E77-89BC-653532BC7223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95344958-848C-4941-BC04-F2CAF1303101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95344958-848C-4941-BC04-F2CAF1303101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95344958-848C-4941-BC04-F2CAF1303101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95344958-848C-4941-BC04-F2CAF1303101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9239D7E8-7219-4CF5-A236-94895F06898F}
+	EndGlobalSection
+EndGlobal

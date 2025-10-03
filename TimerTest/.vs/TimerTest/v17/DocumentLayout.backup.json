@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repos\\MinefieldGame\\TimerTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|d:\\repos\\minefieldgame\\timertest\\ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|solutionrelative:ship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|d:\\repos\\minefieldgame\\timertest\\weight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|solutionrelative:weight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|d:\\repos\\minefieldgame\\timertest\\testobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|solutionrelative:testobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|d:\\repos\\minefieldgame\\timertest\\bomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|solutionrelative:bomb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|d:\\repos\\minefieldgame\\timertest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{365E07BF-749E-4B77-A85F-200721E9EE08}|TimerTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ship.cs",
+              "DocumentMoniker": "D:\\repos\\MinefieldGame\\TimerTest\\Ship.cs",
+              "RelativeDocumentMoniker": "Ship.cs",
+              "ToolTip": "D:\\repos\\MinefieldGame\\TimerTest\\Ship.cs",
+              "RelativeToolTip": "Ship.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAWwCEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T16:28:52.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestObject.cs",
+              "DocumentMoniker": "D:\\repos\\MinefieldGame\\TimerTest\\TestObject.cs",
+              "RelativeDocumentMoniker": "TestObject.cs",
+              "ToolTip": "D:\\repos\\MinefieldGame\\TimerTest\\TestObject.cs",
+              "RelativeToolTip": "TestObject.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T15:11:46.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bomb.cs",
+              "DocumentMoniker": "D:\\repos\\MinefieldGame\\TimerTest\\Bomb.cs",
+              "RelativeDocumentMoniker": "Bomb.cs",
+              "ToolTip": "D:\\repos\\MinefieldGame\\TimerTest\\Bomb.cs",
+              "RelativeToolTip": "Bomb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T15:25:04.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weight.cs",
+              "DocumentMoniker": "D:\\repos\\MinefieldGame\\TimerTest\\Weight.cs",
+              "RelativeDocumentMoniker": "Weight.cs",
+              "ToolTip": "D:\\repos\\MinefieldGame\\TimerTest\\Weight.cs",
+              "RelativeToolTip": "Weight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T15:25:22.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\repos\\MinefieldGame\\TimerTest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\repos\\MinefieldGame\\TimerTest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T15:09:32.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

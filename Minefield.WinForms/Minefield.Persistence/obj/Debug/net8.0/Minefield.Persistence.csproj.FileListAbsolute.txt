@@ -1,0 +1,12 @@
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\bin\Debug\net8.0\Minefield.Persistence.deps.json
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\bin\Debug\net8.0\Minefield.Persistence.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\bin\Debug\net8.0\Minefield.Persistence.pdb
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.AssemblyInfoInputs.cache
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.AssemblyInfo.cs
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.csproj.CoreCompileInputs.cache
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.sourcelink.json
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\refint\Minefield.Persistence.dll
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\Minefield.Persistence.pdb
+D:\repos\MinefieldGame\Minefield.WinForms\Minefield.Persistence\obj\Debug\net8.0\ref\Minefield.Persistence.dll
