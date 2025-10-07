@@ -2,6 +2,34 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Castle.Core/5.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ELTE.FI.SARuleSet/3.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.BannedApiAnalyzers": "3.3.4",
+          "Roslynator.Analyzers": "4.14.0",
+          "SonarAnalyzer.CSharp": "10.15.0.120848"
+        },
+        "build": {
+          "build/ELTE.FI.SARuleSet.props": {},
+          "build/ELTE.FI.SARuleSet.targets": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.22.0": {
         "type": "package",
         "dependencies": {
@@ -16,6 +44,13 @@
           "lib/netstandard2.0/Microsoft.ApplicationInsights.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Microsoft.CodeAnalysis.BannedApiAnalyzers/3.3.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.props": {},
+          "buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.targets": {}
         }
       },
       "Microsoft.CodeCoverage/17.12.0": {
@@ -919,6 +954,18 @@
           "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "Moq/4.20.72": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "MSTest/3.6.4": {
         "type": "package",
         "dependencies": {
@@ -1012,6 +1059,12 @@
           }
         }
       },
+      "Roslynator.Analyzers/4.14.0": {
+        "type": "package"
+      },
+      "SonarAnalyzer.CSharp/10.15.0.120848": {
+        "type": "package"
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1047,6 +1100,32 @@
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -1138,10 +1217,75 @@
         "build": {
           "buildTransitive/netcoreapp3.1/System.Text.Json.targets": {}
         }
+      },
+      "Minefield.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Minefield.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Minefield.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minefield.Model.dll": {}
+        }
+      },
+      "Minefield.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Minefield.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minefield.Persistence.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Castle.Core/5.1.1": {
+      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "type": "package",
+      "path": "castle.core/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.1.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
+    "ELTE.FI.SARuleSet/3.2.1": {
+      "sha512": "g1LjnTglKQ45ZyPPNNLcCNFA4BP+/iscbW3Y3r9jHNa4L0kzYY+D3vZJdiwIPcK6Pcl/zypEiKU+AOejRFIGUw==",
+      "type": "package",
+      "path": "elte.fi.saruleset/3.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/ELTE.FI.SARuleSet.props",
+        "build/ELTE.FI.SARuleSet.targets",
+        "elte.fi.saruleset.3.2.1.nupkg.sha512",
+        "elte.fi.saruleset.nuspec",
+        "elte.png",
+        "files/Analyzers.editorconfig",
+        "files/BannedSymbols.txt",
+        "files/NamingConvention.editorconfig"
+      ]
+    },
     "Microsoft.ApplicationInsights/2.22.0": {
       "sha512": "3AOM9bZtku7RQwHyMEY3tQMrHIgjcfRDa6YQpd/QG2LDGvMydSlL9Di+8LLMt7J2RDdfJ7/2jdYv6yHcMJAnNw==",
       "type": "package",
@@ -1161,6 +1305,115 @@
         "lib/netstandard2.0/Microsoft.ApplicationInsights.xml",
         "microsoft.applicationinsights.2.22.0.nupkg.sha512",
         "microsoft.applicationinsights.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.BannedApiAnalyzers/3.3.4": {
+      "sha512": "0k2Jwpc8eq0hjOtX6TxRkHm9clkJ2PAQ3heEHgqIJZcsfdFosC/iyz18nsgTVDDWpID80rC7aiYK7ripx+Qndg==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.bannedapianalyzers/3.3.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.BannedApiAnalyzers.dll",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll",
+        "analyzers/dotnet/cs/cs/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/de/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/es/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/fr/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/it/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/ja/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/ko/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/pl/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/ru/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/tr/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hans/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hant/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.BannedApiAnalyzers.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.BannedApiAnalyzers.dll",
+        "analyzers/dotnet/vb/cs/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/de/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/es/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/fr/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/it/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/ja/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/ko/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/pl/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/pt-BR/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/ru/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/tr/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hans/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hant/Microsoft.CodeAnalysis.BannedApiAnalyzers.resources.dll",
+        "buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.props",
+        "buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.targets",
+        "buildTransitive/config/analysislevel_2_9_8_all.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_all_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_default.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_default_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_minimum.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_minimum_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_none.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_none_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_recommended.globalconfig",
+        "buildTransitive/config/analysislevel_2_9_8_recommended_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_all.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_all_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_default.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_default_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_minimum.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_minimum_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_none.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_none_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_recommended.globalconfig",
+        "buildTransitive/config/analysislevel_3_9_recommended_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_all.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_all_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_default.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_default_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_minimum.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_minimum_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_none.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_none_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_recommended.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_2_9_8_recommended_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_all.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_all_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_default.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_default_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_minimum.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_minimum_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_none.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_none_warnaserror.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_recommended.globalconfig",
+        "buildTransitive/config/analysislevelapidesign_3_9_recommended_warnaserror.globalconfig",
+        "documentation/Analyzer Configuration.md",
+        "documentation/Microsoft.CodeAnalysis.BannedApiAnalyzers.md",
+        "documentation/Microsoft.CodeAnalysis.BannedApiAnalyzers.sarif",
+        "editorconfig/AllRulesDefault/.editorconfig",
+        "editorconfig/AllRulesDisabled/.editorconfig",
+        "editorconfig/AllRulesEnabled/.editorconfig",
+        "editorconfig/ApiDesignRulesDefault/.editorconfig",
+        "editorconfig/ApiDesignRulesEnabled/.editorconfig",
+        "editorconfig/DataflowRulesDefault/.editorconfig",
+        "editorconfig/DataflowRulesEnabled/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesDefault/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
+        "microsoft.codeanalysis.bannedapianalyzers.3.3.4.nupkg.sha512",
+        "microsoft.codeanalysis.bannedapianalyzers.nuspec",
+        "rulesets/AllRulesDefault.ruleset",
+        "rulesets/AllRulesDisabled.ruleset",
+        "rulesets/AllRulesEnabled.ruleset",
+        "rulesets/ApiDesignRulesDefault.ruleset",
+        "rulesets/ApiDesignRulesEnabled.ruleset",
+        "rulesets/DataflowRulesDefault.ruleset",
+        "rulesets/DataflowRulesEnabled.ruleset",
+        "rulesets/PortedFromFxCopRulesDefault.ruleset",
+        "rulesets/PortedFromFxCopRulesEnabled.ruleset",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "Microsoft.CodeCoverage/17.12.0": {
@@ -2002,6 +2255,23 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "Moq/4.20.72": {
+      "sha512": "EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==",
+      "type": "package",
+      "path": "moq/4.20.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/Moq.dll",
+        "lib/net6.0/Moq.dll",
+        "lib/netstandard2.0/Moq.dll",
+        "lib/netstandard2.1/Moq.dll",
+        "moq.4.20.72.nupkg.sha512",
+        "moq.nuspec",
+        "readme.md"
+      ]
+    },
     "MSTest/3.6.4": {
       "sha512": "PDBqb7FT15DBD/LQtAr2Eq/UY9YVTgsY7CD7ZiDnamc/RI+/2VSak6qotTV+x2oyhcRJxE4USRgyqXIRlyU3kw==",
       "type": "package",
@@ -2280,6 +2550,56 @@
         "packageIcon.png"
       ]
     },
+    "Roslynator.Analyzers/4.14.0": {
+      "sha512": "AEWQMrb1rcmjv9FGzrwYSBb4INhDhsauS+wwTumG0wq8N1Il+CIQHqUZJ7bt0zYJEA1qXSqgpg8Fgwc88WrR/Q==",
+      "type": "package",
+      "path": "roslynator.analyzers/4.14.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.CSharp.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Common.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Core.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/roslyn3.8/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.CSharp.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Common.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Core.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/roslyn4.7/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "docs/README.md",
+        "icon.png",
+        "roslynator.analyzers.4.14.0.nupkg.sha512",
+        "roslynator.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "SonarAnalyzer.CSharp/10.15.0.120848": {
+      "sha512": "1hM3HVRl5jdC/ZBDu+G7CCYLXRGe/QaP01Zy+c9ETPhY7lWD8g8HiefY6sGaH0T3CJ4wAy0/waGgQTh0TYy0oQ==",
+      "type": "package",
+      "path": "sonaranalyzer.csharp/10.15.0.120848",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "analyzers/SonarAnalyzer.CSharp.dll",
+        "images/sonarsource_64.png",
+        "license/THIRD-PARTY-NOTICES.txt",
+        "sonaranalyzer.csharp.10.15.0.120848.nupkg.sha512",
+        "sonaranalyzer.csharp.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -2367,6 +2687,37 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.EventLog.dll",
+        "lib/net461/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Memory/4.5.4": {
@@ -2527,35 +2878,44 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Minefield.Model/1.0.0": {
+      "type": "project",
+      "path": "../Minefield.Model/Minefield.Model.csproj",
+      "msbuildProject": "../Minefield.Model/Minefield.Model.csproj"
+    },
+    "Minefield.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Minefield.Persistence/Minefield.Persistence.csproj",
+      "msbuildProject": "../Minefield.Persistence/Minefield.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "ELTE.FI.SARuleSet >= 3.2.1",
       "MSTest >= 3.6.4",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "Microsoft.Testing.Extensions.CodeCoverage >= 17.12.6",
-      "Microsoft.Testing.Extensions.TrxReport >= 1.4.3"
+      "Microsoft.Testing.Extensions.TrxReport >= 1.4.3",
+      "Minefield.Model >= 1.0.0",
+      "Minefield.Persistence >= 1.0.0",
+      "Moq >= 4.20.72"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\onlin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\onlin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
+      "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
       "projectName": "Minefield.Test",
-      "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
+      "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
       "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-      "outputPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\obj\\",
+      "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2563,13 +2923,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
+              "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj"
+            },
+            "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+              "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2588,6 +2954,12 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "ELTE.FI.SARuleSet": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.2.1, )"
+          },
           "MSTest": {
             "target": "Package",
             "version": "[3.6.4, )"
@@ -2603,6 +2975,10 @@
           "Microsoft.Testing.Extensions.TrxReport": {
             "target": "Package",
             "version": "[1.4.3, )"
+          },
+          "Moq": {
+            "target": "Package",
+            "version": "[4.20.72, )"
           }
         },
         "imports": [

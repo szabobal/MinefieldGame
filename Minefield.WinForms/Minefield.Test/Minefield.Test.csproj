@@ -16,10 +16,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ELTE.FI.SARuleSet" Version="3.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.12.6" />
     <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="1.4.3" />
+    <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="MSTest" Version="3.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minefield.Model\Minefield.Model.csproj" />
+    <ProjectReference Include="..\Minefield.Persistence\Minefield.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

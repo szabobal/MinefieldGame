@@ -1,20 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Minefield.Persistence
+﻿namespace Minefield.Persistence
 {
     public class MinefieldGrid
     {
         #region Fields
 
-        private Bomb?[,] _fields; // Játékmező mezői (aknákkal vagy anélkül).
+        private Bomb?[,] _fields; // Játék mezői (aknákkal vagy anélkül).
+        private Submarine? _submarine;
+        private Ship[]? _ships;
 
         #endregion
 
         #region Properties
+
+        public Submarine Submarine
+        {
+            get => _submarine!;
+            set => _submarine = value;
+        }
+
+        public Ship[] Ships
+        {
+            get => _ships!;
+            set => _ships = value;
+        }
 
         /// <summary>
         /// Játékmező oszlpainak száma.
@@ -56,7 +64,7 @@ namespace Minefield.Persistence
         /// <summary>
         /// Aknamező játéktábla példányosítása
         /// </summary>
-        public MinefieldGrid() : this(10, 10)
+        public MinefieldGrid() : this(15, 15)
         {
         }
 
@@ -78,6 +86,8 @@ namespace Minefield.Persistence
             }
 
             _fields = new Bomb[width, height];
+            _submarine = null;
+            _ships = null;
         }
 
         #endregion
@@ -101,7 +111,7 @@ namespace Minefield.Persistence
                 throw new ArgumentOutOfRangeException(nameof(y), "The y coordinate is out of range!");
             }
 
-            return ContainsBomb(x, y) ? _fields![x, y]! : null;
+            return IsBomb(x, y) ? _fields![x, y]! : null;
         }
 
         /// <summary>
@@ -121,30 +131,11 @@ namespace Minefield.Persistence
                 throw new ArgumentOutOfRangeException(nameof(y), "The y coordinate is out of range!");
             }
 
-            if (ContainsBomb(x, y))
+            if (IsBomb(x, y))
             {
                 throw new InvalidOperationException("A bomb is already present at the specified coordinates.");
             }
-            _fields![x, y] = new Bomb(x, y, weight);
-        }
-
-        /// <summary>
-        /// Lépés ütközést okozna-e.
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
-        public Boolean StepWouldCauseCollision(Int32 x, Int32 y)
-        {
-            if (x < 0 || x >= Rows)
-            {
-                throw new ArgumentOutOfRangeException(nameof(x), "The x coordinate is out of range!");
-            }
-            if (y < 0 || y >= Columns)
-            {
-                throw new ArgumentOutOfRangeException(nameof(y), "The y coordinate is out of range!");
-            }
-            return IsBomb(x, y);
+            _fields![x, y] = new Bomb(weight);
         }
 
         /// <summary>
@@ -155,15 +146,6 @@ namespace Minefield.Persistence
         /// <returns></returns>
         public Boolean ContainsBomb(Int32 x, Int32 y)
         {
-            if (x < 0 || x >= Rows)
-            {
-                throw new ArgumentOutOfRangeException(nameof(x), "The x coordinate is out of range!");
-            }
-            if (y < 0 || y >= Columns)
-            {
-                throw new ArgumentOutOfRangeException(nameof(y), "The y coordinate is out of range!");
-            }
-
             return IsBomb(x, y);
         }
 

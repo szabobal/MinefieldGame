@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj": {}
+    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj": {}
   },
   "projects": {
-    "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
+    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
+        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
         "projectName": "Minefield.Model",
-        "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
+        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
         "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\obj\\",
+        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
-                "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
+              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
               }
             }
           }
@@ -54,6 +49,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "ELTE.FI.SARuleSet": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -74,21 +77,17 @@
         }
       }
     },
-    "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
+        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
         "projectName": "Minefield.Persistence",
-        "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
+        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
         "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\obj\\",
+        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +95,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -120,6 +118,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "ELTE.FI.SARuleSet": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -140,21 +146,17 @@
         }
       }
     },
-    "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj": {
+    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj",
+        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj",
         "projectName": "Minefield.View",
-        "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj",
+        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj",
         "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\obj\\",
+        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,18 +164,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
-                "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj"
+              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
+                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj"
               },
-              "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
-                "projectPath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
+              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
               }
             }
           }
@@ -193,6 +194,14 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "ELTE.FI.SARuleSet": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

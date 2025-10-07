@@ -9,15 +9,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ELTE.FI.SARuleSet" Version="3.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Minefield.Model\Minefield.Model.csproj" />
     <ProjectReference Include="..\Minefield.Persistence\Minefield.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Resources\anothersub.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\boat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\bomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\explosion.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Resources\submarine.png">

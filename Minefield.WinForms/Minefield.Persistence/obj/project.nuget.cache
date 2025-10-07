@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tuvf7eGFuzk=",
+  "dgSpecHash": "q9KBuxIvoKY=",
   "success": true,
-  "projectFilePath": "D:\\repos\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\onlin\\.nuget\\packages\\elte.fi.saruleset\\3.2.1\\elte.fi.saruleset.3.2.1.nupkg.sha512",
+    "C:\\Users\\onlin\\.nuget\\packages\\microsoft.codeanalysis.bannedapianalyzers\\3.3.4\\microsoft.codeanalysis.bannedapianalyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\onlin\\.nuget\\packages\\roslynator.analyzers\\4.14.0\\roslynator.analyzers.4.14.0.nupkg.sha512",
+    "C:\\Users\\onlin\\.nuget\\packages\\sonaranalyzer.csharp\\10.15.0.120848\\sonaranalyzer.csharp.10.15.0.120848.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,32 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Minefield.Persistence
+﻿namespace Minefield.Persistence
 {
-    public class Bomb
-    {
-        public Int32 X { get; set; }
-        public Int32 Y { get; set; }
-        public Weight Weight { get; }
-        public int FallCounter { get; set; }
+	public class Bomb
+	{
+		#region Fields
 
-        public Bomb(Int32 x, Int32 y, Weight weight)
-        {
-            if (x < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(x), "X coordinate must be non-negative.");
-            }
-            if (y < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(y), "Y coordinate must be non-negative.");
-            }
-            X = x;
-            Y = y;
-            Weight = weight;
-            FallCounter = 0;
-        }
-    }
+		private Int32 _sinkRate;
+		private Double lastUpdated;
+
+		#endregion
+
+		#region Properties
+
+		public Weight Weight { get; private set; }
+
+		#endregion
+
+		#region Constructor
+
+		public Bomb(Weight weight)
+		{
+			Weight = weight;
+			SetSinkRate();
+		}
+
+		#endregion
+
+		#region Public methods
+
+		public Boolean UpdatePosition(Double dt)
+		{
+			lastUpdated += dt;
+			if (lastUpdated >= _sinkRate)
+			{
+				lastUpdated = 0;
+				return true;
+			}
+			return false;
+		}
+
+		#endregion
+
+		#region Private methods
+
+		private void SetSinkRate()
+		{
+			// 1 second for starting
+			switch (Weight)
+			{
+				case Weight.LIGHT:
+					_sinkRate = 1300;
+					break;
+				case Weight.MEDIUM:
+					_sinkRate = 1000;
+					break;
+				case Weight.HEAVY:
+					_sinkRate = 800;
+					break;
+			}
+		}
+
+		#endregion
+	}
 }

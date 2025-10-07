@@ -5,13 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\onlin\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\onlin\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\onlin\.nuget\packages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.testing.platform\1.4.3\buildTransitive\net8.0\Microsoft.Testing.Platform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform\1.4.3\buildTransitive\net8.0\Microsoft.Testing.Platform.props')" />
@@ -21,10 +20,15 @@
     <Import Project="$(NuGetPackageRoot)microsoft.testplatform.testhost\17.12.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testplatform.testhost\17.12.0\build\netcoreapp3.1\Microsoft.TestPlatform.TestHost.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.12.0\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.12.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.12.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.BannedApiAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.BannedApiAnalyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)elte.fi.saruleset\3.2.1\build\ELTE.FI.SARuleSet.props" Condition="Exists('$(NuGetPackageRoot)elte.fi.saruleset\3.2.1\build\ELTE.FI.SARuleSet.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testing.extensions.trxreport\1.4.3\buildTransitive\net8.0\Microsoft.Testing.Extensions.TrxReport.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.extensions.trxreport\1.4.3\buildTransitive\net8.0\Microsoft.Testing.Extensions.TrxReport.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.testing.extensions.codecoverage\17.12.6\buildTransitive\net6.0\Microsoft.Testing.Extensions.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.extensions.codecoverage\17.12.6\buildTransitive\net6.0\Microsoft.Testing.Extensions.CodeCoverage.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSonarAnalyzer_CSharp Condition=" '$(PkgSonarAnalyzer_CSharp)' == '' ">C:\Users\onlin\.nuget\packages\sonaranalyzer.csharp\10.15.0.120848</PkgSonarAnalyzer_CSharp>
+    <PkgRoslynator_Analyzers Condition=" '$(PkgRoslynator_Analyzers)' == '' ">C:\Users\onlin\.nuget\packages\roslynator.analyzers\4.14.0</PkgRoslynator_Analyzers>
     <PkgMSTest_Analyzers Condition=" '$(PkgMSTest_Analyzers)' == '' ">C:\Users\onlin\.nuget\packages\mstest.analyzers\3.6.4</PkgMSTest_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers)' == '' ">C:\Users\onlin\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.4</PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers>
   </PropertyGroup>
 </Project>
