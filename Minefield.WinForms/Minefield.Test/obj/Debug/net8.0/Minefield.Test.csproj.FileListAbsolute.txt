@@ -506,3 +506,14 @@ D:\MinefieldGame\Minefield.WinForms\Minefield.Test\obj\Debug\net8.0\refint\Minef
 D:\MinefieldGame\Minefield.WinForms\Minefield.Test\obj\Debug\net8.0\Minefield.Test.pdb
 D:\MinefieldGame\Minefield.WinForms\Minefield.Test\obj\Debug\net8.0\Minefield.Test.genruntimeconfig.cache
 D:\MinefieldGame\Minefield.WinForms\Minefield.Test\obj\Debug\net8.0\ref\Minefield.Test.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Minefield.Test
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\.msCoverageExtensionSourceRootsMapping_Minefield.Test
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Castle.Core.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Moq.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Minefield.Model.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Minefield.Persistence.dll
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Minefield.Model.pdb
+D:\MinefieldGame\Minefield.WinForms\Minefield.Test\bin\Debug\net8.0\Minefield.Persistence.pdb

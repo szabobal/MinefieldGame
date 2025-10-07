@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Minefield.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6021399252c5cfcffc4d0064b17f5f9a6478c453")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f76c27593e6ae745d0af3ea2ec31dc6c6b3ef352")]
 [assembly: System.Reflection.AssemblyProductAttribute("Minefield.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Minefield.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
