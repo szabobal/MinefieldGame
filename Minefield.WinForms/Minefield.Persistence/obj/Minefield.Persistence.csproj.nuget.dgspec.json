@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {}
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj": {}
   },
   "projects": {
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
+        "projectUniqueName": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj",
         "projectName": "Minefield.Persistence",
-        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
-        "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\obj\\",
+        "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj",
+        "packagesPath": "/Users/balazs/.nuget/packages/",
+        "outputPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/balazs/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,12 +62,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

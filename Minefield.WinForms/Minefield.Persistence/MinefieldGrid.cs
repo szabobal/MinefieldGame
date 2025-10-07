@@ -135,7 +135,7 @@
             {
                 throw new InvalidOperationException("A bomb is already present at the specified coordinates.");
             }
-            _fields![x, y] = new Bomb(weight);
+            _fields![x, y] = new Bomb(x,y,weight);
         }
 
         /// <summary>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Minefield.View
+﻿namespace Minefield.View
 {
     internal class GridButton : Button
     {

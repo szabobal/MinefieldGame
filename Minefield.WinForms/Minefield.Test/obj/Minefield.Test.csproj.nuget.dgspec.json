@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj": {}
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Test/Minefield.Test.csproj": {}
   },
   "projects": {
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/Minefield.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
+        "projectUniqueName": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/Minefield.Model.csproj",
         "projectName": "Minefield.Model",
-        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj",
-        "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\obj\\",
+        "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/Minefield.Model.csproj",
+        "packagesPath": "/Users/balazs/.nuget/packages/",
+        "outputPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/balazs/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
-                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
+              "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj": {
+                "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj"
               }
             }
           }
@@ -68,33 +66,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
+        "projectUniqueName": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj",
         "projectName": "Minefield.Persistence",
-        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj",
-        "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\obj\\",
+        "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj",
+        "packagesPath": "/Users/balazs/.nuget/packages/",
+        "outputPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/balazs/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -137,44 +147,56 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj": {
+    "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Test/Minefield.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
+        "projectUniqueName": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Test/Minefield.Test.csproj",
         "projectName": "Minefield.Test",
-        "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\Minefield.Test.csproj",
-        "packagesPath": "C:\\Users\\onlin\\.nuget\\packages\\",
-        "outputPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Test\\obj\\",
+        "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Test/Minefield.Test.csproj",
+        "packagesPath": "/Users/balazs/.nuget/packages/",
+        "outputPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\onlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/balazs/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj": {
-                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Model\\Minefield.Model.csproj"
+              "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/Minefield.Model.csproj": {
+                "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Model/Minefield.Model.csproj"
               },
-              "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj": {
-                "projectPath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.Persistence\\Minefield.Persistence.csproj"
+              "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj": {
+                "projectPath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.Persistence/Minefield.Persistence.csproj"
               }
             }
           }
@@ -233,12 +255,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.20, 8.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

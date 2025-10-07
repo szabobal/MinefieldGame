@@ -4,21 +4,21 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\onlin\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/balazs/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/balazs/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\onlin\.nuget\packages\" />
+    <SourceRoot Include="/Users/balazs/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.BannedApiAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.BannedApiAnalyzers.props')" />
-    <Import Project="$(NuGetPackageRoot)elte.fi.saruleset\3.2.1\build\ELTE.FI.SARuleSet.props" Condition="Exists('$(NuGetPackageRoot)elte.fi.saruleset\3.2.1\build\ELTE.FI.SARuleSet.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers/3.3.4/buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers/3.3.4/buildTransitive/Microsoft.CodeAnalysis.BannedApiAnalyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)elte.fi.saruleset/3.2.1/build/ELTE.FI.SARuleSet.props" Condition="Exists('$(NuGetPackageRoot)elte.fi.saruleset/3.2.1/build/ELTE.FI.SARuleSet.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSonarAnalyzer_CSharp Condition=" '$(PkgSonarAnalyzer_CSharp)' == '' ">C:\Users\onlin\.nuget\packages\sonaranalyzer.csharp\10.15.0.120848</PkgSonarAnalyzer_CSharp>
-    <PkgRoslynator_Analyzers Condition=" '$(PkgRoslynator_Analyzers)' == '' ">C:\Users\onlin\.nuget\packages\roslynator.analyzers\4.14.0</PkgRoslynator_Analyzers>
-    <PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers)' == '' ">C:\Users\onlin\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.3.4</PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers>
+    <PkgSonarAnalyzer_CSharp Condition=" '$(PkgSonarAnalyzer_CSharp)' == '' ">/Users/balazs/.nuget/packages/sonaranalyzer.csharp/10.15.0.120848</PkgSonarAnalyzer_CSharp>
+    <PkgRoslynator_Analyzers Condition=" '$(PkgRoslynator_Analyzers)' == '' ">/Users/balazs/.nuget/packages/roslynator.analyzers/4.14.0</PkgRoslynator_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers)' == '' ">/Users/balazs/.nuget/packages/microsoft.codeanalysis.bannedapianalyzers/3.3.4</PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers>
   </PropertyGroup>
 </Project>

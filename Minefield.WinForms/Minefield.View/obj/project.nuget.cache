@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "2On55PflnWQ=",
+  "dgSpecHash": "wR3g8S9JK8M=",
   "success": true,
-  "projectFilePath": "D:\\MinefieldGame\\Minefield.WinForms\\Minefield.View\\Minefield.View.csproj",
+  "projectFilePath": "/Users/balazs/personal/MinefieldGame/Minefield.WinForms/Minefield.View/Minefield.View.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\onlin\\.nuget\\packages\\elte.fi.saruleset\\3.2.1\\elte.fi.saruleset.3.2.1.nupkg.sha512",
-    "C:\\Users\\onlin\\.nuget\\packages\\microsoft.codeanalysis.bannedapianalyzers\\3.3.4\\microsoft.codeanalysis.bannedapianalyzers.3.3.4.nupkg.sha512",
-    "C:\\Users\\onlin\\.nuget\\packages\\roslynator.analyzers\\4.14.0\\roslynator.analyzers.4.14.0.nupkg.sha512",
-    "C:\\Users\\onlin\\.nuget\\packages\\sonaranalyzer.csharp\\10.15.0.120848\\sonaranalyzer.csharp.10.15.0.120848.nupkg.sha512"
+    "/Users/balazs/.nuget/packages/elte.fi.saruleset/3.2.1/elte.fi.saruleset.3.2.1.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/microsoft.codeanalysis.bannedapianalyzers/3.3.4/microsoft.codeanalysis.bannedapianalyzers.3.3.4.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/roslynator.analyzers/4.14.0/roslynator.analyzers.4.14.0.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/sonaranalyzer.csharp/10.15.0.120848/sonaranalyzer.csharp.10.15.0.120848.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/microsoft.netcore.app.ref/8.0.20/microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/microsoft.windowsdesktop.app.ref/8.0.20/microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.20/microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "/Users/balazs/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.20/microsoft.netcore.app.host.osx-arm64.8.0.20.nupkg.sha512"
   ],
   "logs": []
 }

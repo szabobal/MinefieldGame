@@ -11,14 +11,19 @@
 
 		#region Properties
 
+        public Int32 X {get; set;}
+        public Int32 Y {get; set;}
+
 		public Weight Weight { get; private set; }
 
 		#endregion
 
 		#region Constructor
 
-		public Bomb(Weight weight)
+		public Bomb(Int32 x, Int32 y, Weight weight)
 		{
+            X = x;
+            Y = y;
 			Weight = weight;
 			SetSinkRate();
 		}
