@@ -7,10 +7,17 @@
         private Bomb?[,] _fields; // Játék mezői (aknákkal vagy anélkül).
         private Submarine? _submarine;
         private Ship[]? _ships;
+        private List<Bomb> _bombsPlaced;
 
         #endregion
 
         #region Properties
+
+        public List<Bomb> BombsPlaced
+        {
+            get => _bombsPlaced;
+            set => _bombsPlaced = value;
+        }
 
         public Submarine Submarine
         {
@@ -25,7 +32,7 @@
         }
 
         /// <summary>
-        /// Játékmező oszlpainak száma.
+        /// Játékmező oszlopainak száma.
         /// </summary>
         public Int32 Columns => _fields!.GetLength(0);
 
@@ -52,7 +59,7 @@
                 }
                 else
                 {
-                    AddBombAt(x, y, value.Weight);
+                    AddBombAt(new Bomb(x, y, value.Weight));
                 }
             }
         }
@@ -120,22 +127,14 @@
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <exception cref="InvalidOperationException"></exception>
-        public void AddBombAt(Int32 x, Int32 y, Weight weight)
+        public void AddBombAt(Bomb bomb)
         {
-            if (x < 0 || x >= Rows)
-            {
-                throw new ArgumentOutOfRangeException(nameof(x), "The x coordinate is out of range!");
-            }
-            if (y < 0 || y >= Columns)
-            {
-                throw new ArgumentOutOfRangeException(nameof(y), "The y coordinate is out of range!");
-            }
-
-            if (IsBomb(x, y))
+            if (IsBomb(bomb.X, bomb.Y))
             {
                 throw new InvalidOperationException("A bomb is already present at the specified coordinates.");
             }
-            _fields![x, y] = new Bomb(x,y,weight);
+            //_fields![x, y] = new Bomb(x,y,weight);
+            _fields[bomb.X, bomb.Y] = bomb;
         }
 
         /// <summary>

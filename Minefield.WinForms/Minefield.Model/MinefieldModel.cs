@@ -10,20 +10,26 @@ namespace Minefield.Model
         private MinefieldGrid _gameArea;
         private Double _timePlayed;
         private DateTime _lastUpdate;
+
+        private readonly Random _random = new Random();
         private readonly System.Timers.Timer _timer;
         private readonly System.Timers.Timer _bombDropTimer;
-        private readonly Double _startingDropInterval;
-        private readonly Double _minDropInterval;
 
-        private List<Bomb> _bombsPlaced = null!;
+
 
         #endregion
 
         #region Properties
 
+        public List<Bomb> BombsPlaced
+        {
+            get => _gameArea.BombsPlaced;
+            private set => _gameArea.BombsPlaced = value;
+        }
+
         public Ship[] Ships
         {
-            get => _gameArea.Ships ?? Array.Empty<Ship>();
+            get => _gameArea.Ships;
             private set => _gameArea.Ships = value;
         }
 
@@ -59,26 +65,23 @@ namespace Minefield.Model
             _gameArea = new MinefieldGrid();
             _timePlayed = 0;
             _lastUpdate = DateTime.Now;
-            _startingDropInterval = 2600;
-            _minDropInterval = 750;
-            _bombsPlaced = new List<Bomb>();
+            BombsPlaced = new List<Bomb>();
 
             _timer = new System.Timers.Timer(200);
             _timer.Elapsed += Timer_Elapsed;
 
 
-            _bombDropTimer = new System.Timers.Timer(_startingDropInterval);
+            _bombDropTimer = new System.Timers.Timer(2500);
             _bombDropTimer.Elapsed += BombDropTimer_Elapsed;
-
         }
 
         #endregion
 
         #region Public table accessors
 
-        public void AddBombAt(Int32 x, Int32 y, Weight weight)
+        public void AddBombAt(Bomb bomb)
         {
-            _gameArea.AddBombAt(x, y, weight);
+            _gameArea.AddBombAt(bomb);
         }
 
         public Boolean ContainsBomb(Int32 x, Int32 y)
@@ -137,7 +140,7 @@ namespace Minefield.Model
         {
             int newX = Submarine.X + dx;
             int newY = Submarine.Y + dy;
-            if (newX >= 1 && newX < _gameArea.Rows && newY >= 0 && newY < _gameArea.Columns)
+            if (newX >= 1 && newX < Rows && newY >= 0 && newY < Columns)
             {
                 Submarine.X = newX;
                 Submarine.Y = newY;
@@ -156,22 +159,21 @@ namespace Minefield.Model
 
         private void GenerateStartingPositions()
         {
-            Random random = new();
-            Int32 x = random.Next(2, _gameArea.Rows);
-            Int32 y = random.Next(0, _gameArea.Columns);
+            Int32 x = _random.Next(2, Rows);
+            Int32 y = _random.Next(0, Columns);
             Submarine = new Submarine(x, y);
 
             Ships = new Ship[4];
-            Int32[] cols = Enumerable.Range(0, _gameArea.Columns).ToArray();
+            Int32[] cols = Enumerable.Range(0, Columns).ToArray();
             for (Int32 i = 0; i < 4; i++)
             {
-                Int32 j = random.Next(i, _gameArea.Columns);
+                Int32 j = _random.Next(i, Columns);
                 (cols[i], cols[j]) = (cols[j], cols[i]);
             }
 
             for (Int32 i = 0; i < 4; i++)
             {
-                Int32 dir = random.Next(0, 2) == 0 ? -1 : 1;
+                Int32 dir = _random.Next(0, 2) == 0 ? -1 : 1;
                 Ships[i] = new Ship(cols[i], dir);
             }
         }
@@ -179,12 +181,11 @@ namespace Minefield.Model
         private void DropBomb(Int32 col)
         {
             Weight[] weights = { Weight.LIGHT, Weight.MEDIUM, Weight.HEAVY };
-            Random random = new();
-            Weight randomWeight = weights[random.Next(0, weights.Length)];
-            if (col >= 0 && col < _gameArea.Columns && !ContainsBomb(1, col))
+            Weight randomWeight = weights[_random.Next(0, weights.Length)];
+            if (col >= 0 && col < Columns && !ContainsBomb(1, col))
             {
-                AddBombAt(1, col, randomWeight);
-                _bombsPlaced.Add(this[1,col]);
+                AddBombAt(new Bomb(1, col, randomWeight));
+                BombsPlaced.Add(this[1,col]!);
             }
         }
 
@@ -198,53 +199,57 @@ namespace Minefield.Model
 
         private void ShipsMoving()
         {
-            var ships = Ships;
-            Int32 n = ships.Length;
-            Int32[] nextY = new Int32[n];
+            Int32[] nextY = new Int32[Ships.Length];
 
-            for (Int32 i = 0; i < n; i++)
+            for (Int32 i = 0; i < Ships.Length; i++)
             {
-                nextY[i] = ships[i].Y + ships[i].ShipDirection;
-                if (nextY[i] < 0 || nextY[i] >= _gameArea.Columns)
+                nextY[i] = Ships[i].Y + Ships[i].ShipDirection;
+                if (nextY[i] < 0 || nextY[i] >= Columns)
                 {
-                    ships[i].SetDirection(ships[i].ShipDirection * -1);
-                    nextY[i] = ships[i].Y + ships[i].ShipDirection;
+                    Ships[i].SetDirection(Ships[i].ShipDirection * -1);
+                    nextY[i] = Ships[i].Y + Ships[i].ShipDirection;
                 }
             }
 
-            for (Int32 i = 0; i < n; i++)
-                ships[i].Y = nextY[i];
-
-            OnShipMoved();
+            for (Int32 i = 0; i < Ships.Length; i++)
+                Ships[i].Y = nextY[i];
         }
 
-        private void ClearBottomRow()
+        private void ClearFromBottomRow(Bomb bomb)
         {
-            for (Int32 j = 0; j < _gameArea.Columns; j++)
-            {
-                if (ContainsBomb(_gameArea.Rows - 1, j))
-                {
-                    _bombsPlaced.Remove(this[_gameArea.Rows - 1, j]);
-                    _gameArea[_gameArea.Rows - 1, j] = null;
-                }
-            }
+            BombsPlaced.Remove(bomb);
+            _gameArea[bomb.X, bomb.Y] = null;
+            //for (Int32 j = 0; j < Columns; j++)
+            //{
+            //    if (ContainsBomb(Rows - 1, j))
+            //    {
+            //        _bombsPlaced.Remove(this[Rows - 1, j]!);
+            //        _gameArea[Rows - 1, j] = null;
+            //    }
+            //}
         }
 
         private void SinkBomb(Double dt)
         {
-            foreach (var bomb in _bombsPlaced)
+            foreach (var bomb in BombsPlaced)
             {
                 Int32 row = bomb.X;
                 Int32 column = bomb.Y;
-                if (!ContainsBomb(row + 1, column) && bomb.UpdatePosition(dt))
+                if (row + 1 >= Rows)
+                    ClearFromBottomRow(bomb);
+                else if (!ContainsBomb(row + 1, column) && bomb.UpdatePosition(dt))
                 {
                     _gameArea[row + 1, column] = bomb;
                     _gameArea[row, column] = null;
+                    bomb.X += 1;
                 }
+                //if (bomb.X == Rows - 1) {
+                //    OnBombSinked();
+                //}
             }
 
-            //for (Int32 column = 0; column < _gameArea.Columns; column++)
-            //    for (Int32 row = _gameArea.Rows - 2; row >= 1; row--)
+            //for (Int32 column = 0; column < Columns; column++)
+            //    for (Int32 row = Rows - 2; row >= 1; row--)
             //    {
             //        var bomb = this[row, column];
             //        if (bomb != null && !ContainsBomb(row + 1, column))
@@ -255,18 +260,21 @@ namespace Minefield.Model
             //                _gameArea[row, column] = null;
             //            }
             //        }
+
+            //        if (bomb.X == Rows)
+            //            ClearFromBottomRow(bomb);
             //    }
         }
 
         private void CheckForSubmarineCollision()
         {
-            if (ContainsBomb(Submarine!.X, Submarine.Y))
+            if (ContainsBomb(Submarine.X, Submarine.Y))
                 Submarine.CollidedWithBomb = true;
         }
 
         private void UpdateInterval()
         {
-            _bombDropTimer.Interval = Math.Max(_minDropInterval, _bombDropTimer.Interval - 25);
+            _bombDropTimer.Interval = Math.Max(750, _bombDropTimer.Interval - 25);
             Console.WriteLine(_bombDropTimer.Interval);
         }
         #endregion
@@ -277,22 +285,13 @@ namespace Minefield.Model
         {
             Double dt = (DateTime.Now - _lastUpdate).TotalMilliseconds;
             _lastUpdate = DateTime.Now;
-
             _timePlayed += dt;
-            //if (_timePlayed >= 200)
-            //{
-            //	ShipsMoving();
-            //	_timePlayed = 0;
-            //}
 
             ShipsMoving();
             SinkBomb(dt);
-
             CheckForSubmarineCollision();
 
             GameAdvanced?.Invoke(this, EventArgs.Empty);
-
-            ClearBottomRow();
         }
 
         private void OnGameOver()
@@ -314,16 +313,12 @@ namespace Minefield.Model
         private void Timer_Elapsed(Object? sender, EventArgs e)
         {
             if (IsGameOver)
-            {
                 return;
-            }
 
             OnGameAdvanced();
 
-            if (Submarine!.CollidedWithBomb)
-            {
+            if (Submarine.CollidedWithBomb)
                 OnGameOver();
-            }
         }
 
         private void BombDropTimer_Elapsed(Object? sender, EventArgs e)

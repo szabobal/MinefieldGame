@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Minefield.Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5550f7c428d401bfe995c485ecd29e29ee8f1921")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e71d507281ff85b000485d2f1c2a1abbfa262630")]
 [assembly: System.Reflection.AssemblyProductAttribute("Minefield.Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Minefield.Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

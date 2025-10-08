@@ -1,69 +1,69 @@
 ﻿namespace Minefield.Persistence
 {
-	public class Bomb
-	{
-		#region Fields
+    public class Bomb
+    {
+        #region Fields
 
-		private Int32 _sinkRate;
-		private Double lastUpdated;
+        private Int32 _sinkRate;
+        private Double lastUpdated;
 
-		#endregion
+        #endregion
 
-		#region Properties
+        #region Properties
 
         public Int32 X {get; set;}
         public Int32 Y {get; set;}
 
-		public Weight Weight { get; private set; }
+        public Weight Weight { get; private set; }
 
-		#endregion
+        #endregion
 
-		#region Constructor
+        #region Constructor
 
-		public Bomb(Int32 x, Int32 y, Weight weight)
-		{
+        public Bomb(Int32 x, Int32 y, Weight weight)
+        {
             X = x;
             Y = y;
-			Weight = weight;
-			SetSinkRate();
-		}
+            Weight = weight;
+            SetSinkRate();
+        }
 
-		#endregion
+        #endregion
 
-		#region Public methods
+        #region Public methods
 
-		public Boolean UpdatePosition(Double dt)
-		{
-			lastUpdated += dt;
-			if (lastUpdated >= _sinkRate)
-			{
-				lastUpdated = 0;
-				return true;
-			}
-			return false;
-		}
+        public Boolean UpdatePosition(Double dt)
+        {
+            lastUpdated += dt;
+            if (lastUpdated >= _sinkRate)
+            {
+                X += 1;
+               lastUpdated = 0;
+                return true;
+            }
+            return false;
+        }
 
-		#endregion
+        #endregion
 
-		#region Private methods
+        #region Private methods
 
-		private void SetSinkRate()
-		{
-			// 1 second for starting
-			switch (Weight)
-			{
-				case Weight.LIGHT:
-					_sinkRate = 1300;
-					break;
-				case Weight.MEDIUM:
-					_sinkRate = 1000;
-					break;
-				case Weight.HEAVY:
-					_sinkRate = 800;
-					break;
-			}
-		}
+        private void SetSinkRate()
+        {
+            switch (Weight)
+            {
+                case Weight.LIGHT:
+                    _sinkRate = 1300;
+                    break;
+                case Weight.MEDIUM:
+                    _sinkRate = 1000;
+                    break;
+                case Weight.HEAVY:
+                    _sinkRate = 800;
+                    break;
+            }
+        }
 
-		#endregion
-	}
+        #endregion
+    }
 }

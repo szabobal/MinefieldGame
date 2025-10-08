@@ -4,8 +4,9 @@
     {
         private Int32 _x;
         private Int32 _y;
-        public Int32 CoordX { get { return _x; } }
-        public Int32 CoordY { get { return _y; } }
+
+        public Int32 X { get { return _x; } }
+        public Int32 Y { get { return _y; } }
 
         public GridButton(Int32 x, Int32 y)
         {
